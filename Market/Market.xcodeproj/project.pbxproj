@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0107C4D223E5A5E000084A2A /* extansionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4CA23E5A5DF00084A2A /* extansionDate.swift */; };
-		0107C4D323E5A5E000084A2A /* Cashbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4CB23E5A5DF00084A2A /* Cashbox.swift */; };
-		0107C4D423E5A5E000084A2A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4CC23E5A5DF00084A2A /* Product.swift */; };
-		0107C4D523E5A5E000084A2A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4CD23E5A5DF00084A2A /* Database.swift */; };
-		0107C4D623E5A5E000084A2A /* Warehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4CE23E5A5DF00084A2A /* Warehouse.swift */; };
-		0107C4D723E5A5E000084A2A /* CheckFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4CF23E5A5DF00084A2A /* CheckFormatter.swift */; };
-		0107C4D823E5A5E000084A2A /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4D023E5A5DF00084A2A /* Catalog.swift */; };
-		0107C4D923E5A5E000084A2A /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4D123E5A5DF00084A2A /* Check.swift */; };
-		0107C4DB23E5A5FB00084A2A /* QRLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0107C4DA23E5A5FB00084A2A /* QRLogic.swift */; };
 		0120399223F221E70092EFE0 /* TableViewCatalogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120399123F221E70092EFE0 /* TableViewCatalogController.swift */; };
 		0120399423F22EA90092EFE0 /* TableViewDirectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0120399323F22EA90092EFE0 /* TableViewDirectorController.swift */; };
 		012D072F23E104B0009A8E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012D072E23E104B0009A8E1F /* AppDelegate.swift */; };
@@ -25,6 +16,15 @@
 		012D073823E104B1009A8E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012D073723E104B1009A8E1F /* Assets.xcassets */; };
 		012D073B23E104B1009A8E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012D073923E104B1009A8E1F /* LaunchScreen.storyboard */; };
 		014BBC1B23E98A89008E2071 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014BBC1A23E98A89008E2071 /* Assembly.swift */; };
+		0170E17723F3941500C8BAB9 /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E16F23F3941400C8BAB9 /* Catalog.swift */; };
+		0170E17823F3941500C8BAB9 /* Cashbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E17023F3941400C8BAB9 /* Cashbox.swift */; };
+		0170E17923F3941500C8BAB9 /* extansionDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E17123F3941400C8BAB9 /* extansionDate.swift */; };
+		0170E17A23F3941500C8BAB9 /* CheckFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E17223F3941400C8BAB9 /* CheckFormatter.swift */; };
+		0170E17B23F3941500C8BAB9 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E17323F3941400C8BAB9 /* Database.swift */; };
+		0170E17C23F3941500C8BAB9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E17423F3941500C8BAB9 /* Product.swift */; };
+		0170E17D23F3941500C8BAB9 /* Warehouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E17523F3941500C8BAB9 /* Warehouse.swift */; };
+		0170E17E23F3941500C8BAB9 /* Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E17623F3941500C8BAB9 /* Check.swift */; };
+		0170E18023F3948600C8BAB9 /* QRLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0170E17F23F3948600C8BAB9 /* QRLogic.swift */; };
 		019DA51D23F3030900AB76C8 /* QrViewCashboxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019DA51C23F3030900AB76C8 /* QrViewCashboxController.swift */; };
 		01ABFC1623F216460053768E /* TableViewWarehouseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ABFC1523F216460053768E /* TableViewWarehouseController.swift */; };
 		01B0A96F23E99BD300E1DDF7 /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B0A96E23E99BD300E1DDF7 /* StartPageViewController.swift */; };
@@ -35,15 +35,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0107C4CA23E5A5DF00084A2A /* extansionDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = extansionDate.swift; path = ../../../Shop/Shop/extansionDate.swift; sourceTree = "<group>"; };
-		0107C4CB23E5A5DF00084A2A /* Cashbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cashbox.swift; path = ../../../Shop/Shop/Cashbox.swift; sourceTree = "<group>"; };
-		0107C4CC23E5A5DF00084A2A /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../../../Shop/Shop/Product.swift; sourceTree = "<group>"; };
-		0107C4CD23E5A5DF00084A2A /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Database.swift; path = ../../../Shop/Shop/Database.swift; sourceTree = "<group>"; };
-		0107C4CE23E5A5DF00084A2A /* Warehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Warehouse.swift; path = ../../../Shop/Shop/Warehouse.swift; sourceTree = "<group>"; };
-		0107C4CF23E5A5DF00084A2A /* CheckFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckFormatter.swift; path = ../../../Shop/Shop/CheckFormatter.swift; sourceTree = "<group>"; };
-		0107C4D023E5A5DF00084A2A /* Catalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Catalog.swift; path = ../../../Shop/Shop/Catalog.swift; sourceTree = "<group>"; };
-		0107C4D123E5A5DF00084A2A /* Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Check.swift; path = ../../../Shop/Shop/Check.swift; sourceTree = "<group>"; };
-		0107C4DA23E5A5FB00084A2A /* QRLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QRLogic.swift; path = ../../../PopsVops/PopsVops/Model/QRLogic.swift; sourceTree = "<group>"; };
 		0120399123F221E70092EFE0 /* TableViewCatalogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCatalogController.swift; sourceTree = "<group>"; };
 		0120399323F22EA90092EFE0 /* TableViewDirectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDirectorController.swift; sourceTree = "<group>"; };
 		012D072B23E104B0009A8E1F /* Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +46,15 @@
 		012D073A23E104B1009A8E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		012D073C23E104B1009A8E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		014BBC1A23E98A89008E2071 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		0170E16F23F3941400C8BAB9 /* Catalog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		0170E17023F3941400C8BAB9 /* Cashbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cashbox.swift; sourceTree = "<group>"; };
+		0170E17123F3941400C8BAB9 /* extansionDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extansionDate.swift; sourceTree = "<group>"; };
+		0170E17223F3941400C8BAB9 /* CheckFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckFormatter.swift; sourceTree = "<group>"; };
+		0170E17323F3941400C8BAB9 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		0170E17423F3941500C8BAB9 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0170E17523F3941500C8BAB9 /* Warehouse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Warehouse.swift; sourceTree = "<group>"; };
+		0170E17623F3941500C8BAB9 /* Check.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
+		0170E17F23F3948600C8BAB9 /* QRLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRLogic.swift; sourceTree = "<group>"; };
 		019DA51C23F3030900AB76C8 /* QrViewCashboxController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrViewCashboxController.swift; sourceTree = "<group>"; };
 		01ABFC1523F216460053768E /* TableViewWarehouseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewWarehouseController.swift; sourceTree = "<group>"; };
 		01B0A96E23E99BD300E1DDF7 /* StartPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
@@ -95,17 +95,17 @@
 		0107C4C923E5A5C000084A2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0170E17023F3941400C8BAB9 /* Cashbox.swift */,
+				0170E16F23F3941400C8BAB9 /* Catalog.swift */,
+				0170E17623F3941500C8BAB9 /* Check.swift */,
+				0170E17223F3941400C8BAB9 /* CheckFormatter.swift */,
+				0170E17323F3941400C8BAB9 /* Database.swift */,
+				0170E17123F3941400C8BAB9 /* extansionDate.swift */,
+				0170E17423F3941500C8BAB9 /* Product.swift */,
+				0170E17523F3941500C8BAB9 /* Warehouse.swift */,
 				01F8454C23F0298C008A3BEE /* Workers.swift */,
-				0107C4CB23E5A5DF00084A2A /* Cashbox.swift */,
-				0107C4D023E5A5DF00084A2A /* Catalog.swift */,
-				0107C4D123E5A5DF00084A2A /* Check.swift */,
-				0107C4CF23E5A5DF00084A2A /* CheckFormatter.swift */,
-				0107C4CD23E5A5DF00084A2A /* Database.swift */,
-				0107C4CC23E5A5DF00084A2A /* Product.swift */,
-				0107C4CE23E5A5DF00084A2A /* Warehouse.swift */,
-				0107C4CA23E5A5DF00084A2A /* extansionDate.swift */,
-				0107C4DA23E5A5FB00084A2A /* QRLogic.swift */,
 				014BBC1A23E98A89008E2071 /* Assembly.swift */,
+				0170E17F23F3948600C8BAB9 /* QRLogic.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,27 +227,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0107C4D223E5A5E000084A2A /* extansionDate.swift in Sources */,
+				0170E17C23F3941500C8BAB9 /* Product.swift in Sources */,
+				0170E18023F3948600C8BAB9 /* QRLogic.swift in Sources */,
 				0120399423F22EA90092EFE0 /* TableViewDirectorController.swift in Sources */,
-				0107C4D723E5A5E000084A2A /* CheckFormatter.swift in Sources */,
+				0170E17A23F3941500C8BAB9 /* CheckFormatter.swift in Sources */,
 				01ABFC1623F216460053768E /* TableViewWarehouseController.swift in Sources */,
-				0107C4DB23E5A5FB00084A2A /* QRLogic.swift in Sources */,
 				014BBC1B23E98A89008E2071 /* Assembly.swift in Sources */,
 				012D073323E104B0009A8E1F /* CashboxViewController.swift in Sources */,
 				0120399223F221E70092EFE0 /* TableViewCatalogController.swift in Sources */,
+				0170E17B23F3941500C8BAB9 /* Database.swift in Sources */,
+				0170E17923F3941500C8BAB9 /* extansionDate.swift in Sources */,
 				012D072F23E104B0009A8E1F /* AppDelegate.swift in Sources */,
 				01B0A97523E99C0000E1DDF7 /* WarehouseViewController.swift in Sources */,
-				0107C4D823E5A5E000084A2A /* Catalog.swift in Sources */,
-				0107C4D323E5A5E000084A2A /* Cashbox.swift in Sources */,
 				012D073123E104B0009A8E1F /* SceneDelegate.swift in Sources */,
 				01B0A96F23E99BD300E1DDF7 /* StartPageViewController.swift in Sources */,
-				0107C4D923E5A5E000084A2A /* Check.swift in Sources */,
-				0107C4D523E5A5E000084A2A /* Database.swift in Sources */,
+				0170E17D23F3941500C8BAB9 /* Warehouse.swift in Sources */,
+				0170E17E23F3941500C8BAB9 /* Check.swift in Sources */,
 				019DA51D23F3030900AB76C8 /* QrViewCashboxController.swift in Sources */,
-				0107C4D623E5A5E000084A2A /* Warehouse.swift in Sources */,
-				0107C4D423E5A5E000084A2A /* Product.swift in Sources */,
 				01F8454D23F0298C008A3BEE /* Workers.swift in Sources */,
+				0170E17723F3941500C8BAB9 /* Catalog.swift in Sources */,
 				01B0A97923E99C5500E1DDF7 /* DirectorViewController.swift in Sources */,
+				0170E17823F3941500C8BAB9 /* Cashbox.swift in Sources */,
 				01B0A97323E99BF200E1DDF7 /* CatalogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

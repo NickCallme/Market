@@ -269,7 +269,7 @@ class CashboxViewController: UIViewController, UITableViewDataSource, UITableVie
             let actionAccept = UIAlertAction(title: "Подтвердить", style: .default) { (accept) in
                 
                 // Оплата безналичными и получение чека
-                let check = market.cashMachine.purchaseCashless()
+                let check = market.cashMachine.purchaseCash()
                 // Перезагрузка таблицы
                 self.tableViewOutlet.reloadData()
                 

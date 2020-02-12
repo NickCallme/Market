@@ -76,6 +76,9 @@ class QrViewCashboxController: UIViewController , AVCaptureMetadataOutputObjects
             
             if productCatalog != nil {
                 
+                // Остановка сканирования
+                self.qrModel.stop()
+                
                 // Создание алерт контроллера
                 let alertController = UIAlertController(title: "", message: "", preferredStyle: .alert)
                 alertController.title = "Количетво"
@@ -98,7 +101,12 @@ class QrViewCashboxController: UIViewController , AVCaptureMetadataOutputObjects
                         alertControllerFail.message = "На складе отсутствует продукт " + productCatalog!.name
                         
                         // Кнопка ОК
-                        let actionOK = UIAlertAction(title: "OK", style: .default, handler: nil)
+                        let actionOK = UIAlertAction(title: "OK", style: .default) { (action) in
+                            
+                            // Продолжить сканирование
+                            self.continueScan()
+                            
+                        }
                         
                         // Добавление кнопки ОК
                         alertControllerFail.addAction(actionOK)
@@ -113,7 +121,12 @@ class QrViewCashboxController: UIViewController , AVCaptureMetadataOutputObjects
                         alertControllerFail.message = "На складе отсутсвует указанное количество " + productCatalog!.name
                         
                         // Кнопка ОК
-                        let actionOK = UIAlertAction(title: "OK", style: .default, handler: nil)
+                        let actionOK = UIAlertAction(title: "OK", style: .default) { (action) in
+                            
+                            // Продолжить сканирование
+                            self.continueScan()
+                            
+                        }
                         
                         // Добавление кнопки ОК
                         alertControllerFail.addAction(actionOK)
@@ -124,8 +137,6 @@ class QrViewCashboxController: UIViewController , AVCaptureMetadataOutputObjects
                         
                         // Добавление позиции в кассу
                         market.cashMachine.addPosition(id: id, count: count)
-                        // Остановка QR сканирования
-                        self.qrModel.stop()
                        
                         // Обращение к предыдущему контроллеру
                         let preVcOptional = self.presentingViewController as? CashboxViewController
@@ -139,7 +150,12 @@ class QrViewCashboxController: UIViewController , AVCaptureMetadataOutputObjects
                     
                 }
                 // Кнопка Отмена
-                let actionCancel = UIAlertAction(title: "Отмена", style: .default, handler: nil)
+                let actionCancel = UIAlertAction(title: "Отмена", style: .default) { (action) in
+                    
+                    // Продолжить сканирование
+                    self.continueScan()
+                    
+                }
                 // Цвет кнопки отмена
                 actionCancel.setValue(UIColor.red, forKey: "titleTextColor")
                 
@@ -160,6 +176,14 @@ class QrViewCashboxController: UIViewController , AVCaptureMetadataOutputObjects
             }
             
         }
+        
+    }
+    
+    // MARK: Функция для продолжения сканирования
+    func continueScan() {
+        
+        qrModel.captureSession.startRunning()
+        qrCodeFrameView.frame = CGRect.zero
         
     }
     
