@@ -92,6 +92,12 @@ class QrViewCashboxController: UIViewController , AVCaptureMetadataOutputObjects
                     guard let count = Double(countStr) else {return}
                     
                     let productWarehouse = market.servicesAssembly.warehouse.findProduct(id: id)
+                    var countCheck = market.cashMachine.returnCheck().returnData()[id]?.1
+                    
+                    // Присвоение 0 к кол-ву товара в чеке
+                    if countCheck == nil {
+                        countCheck = Double(0)
+                    }
                     
                     if productWarehouse == nil {
                         
@@ -113,7 +119,7 @@ class QrViewCashboxController: UIViewController , AVCaptureMetadataOutputObjects
                         
                         self.present(alertControllerFail, animated: true, completion: nil)
                         
-                    } else if count > productWarehouse!.1 {
+                    } else if (count + countCheck!) > productWarehouse!.1 {
                         
                         // Создание алерт контроллера
                         let alertControllerFail = UIAlertController(title: "", message: "", preferredStyle: .alert)

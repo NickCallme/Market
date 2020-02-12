@@ -86,9 +86,15 @@ class CashboxViewController: UIViewController, UITableViewDataSource, UITableVie
             guard let countStr = alertController.textFields?.last?.text else {return}
             guard let count = Double(countStr) else {return}
             
-            // Переменный для вариации
+            // Переменные для вариации
             let warehouseProduct = market.servicesAssembly.warehouse.findProduct(id: id)
             let catalogProduct = market.servicesAssembly.catalog.find(id)
+            var countCheck = market.cashMachine.returnCheck().returnData()[id]?.1
+            
+            // Присвоение 0 к кол-ву товара в чеке
+            if countCheck == nil {
+                countCheck = Double(0)
+            }
             
             if catalogProduct == nil {
                 
@@ -120,7 +126,7 @@ class CashboxViewController: UIViewController, UITableViewDataSource, UITableVie
                 
                 self.present(alertControllerFail, animated: true, completion: nil)
                 
-            } else if count > warehouseProduct!.1 {
+            } else if (count + countCheck!) > warehouseProduct!.1 {
                 
                 // Создание алерт кнотроллера
                 let alertControllerFail = UIAlertController(title: "", message: "", preferredStyle: .alert)
@@ -136,6 +142,7 @@ class CashboxViewController: UIViewController, UITableViewDataSource, UITableVie
                 self.present(alertControllerFail, animated: true, completion: nil)
                 
             } else {
+                
                 
                 // Функция добавления позиции в чек
                 market.cashMachine.addPosition(id: id, count: count)
